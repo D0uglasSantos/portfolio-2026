@@ -13,7 +13,8 @@
         --popover: 0 0% 3.9%;
         --popover-foreground: 0 0% 98%;
 
-        --primary: 140 100% 47%;
+        --primary: 25 95% 53%;
+        --primary-hover: 25 95% 46%;
         --primary-foreground: 0 0% 13%;
         --secondary: 193 100% 47%;
         --secondary-foreground: 0 0% 13%;
@@ -27,7 +28,7 @@
         --input: 0 0% 14.9%;
         --ring: 0 0% 83.1%;
         --chart-1: 220 70% 50%;
-        --chart-2: 160 60% 45%;
+        --chart-2: 28 65% 48%;
         --chart-3: 30 80% 55%;
         --chart-4: 280 65% 60%;
         --chart-5: 340 75% 55%;

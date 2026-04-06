@@ -1,19 +1,21 @@
 import { IProject } from '@/types';
 
 export const GENERAL_INFO = {
-    email: 'tasmirolislam@gmail.com',
+    email: 'dastechnologiescontato@gmail.com',
 
     emailSubject: "Let's collaborate on a project",
-    emailBody: 'Hi Tajmirul, I am reaching out to you because...',
+    emailBody: 'Hi Douglas, I am reaching out to you because...',
 
-    oldPortfolio: 'https://www.legacy.me.toinfinite.dev',
-    upworkProfile: 'https://www.upwork.com/freelancers/tajmirul',
+    oldPortfolio: 'https://douglas-santos-portfolio.vercel.app/',
+    linkedin: 'https://www.linkedin.com/in/douglas-aquino-santos/',
 };
 
 export const SOCIAL_LINKS = [
-    { name: 'github', url: 'https://github.com/Tajmirul' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/tajmirul' },
-    { name: 'facebook', url: 'https://www.facebook.com/tajmirul.2000' },
+    { name: 'github', url: 'https://github.com/D0uglasSantos' },
+    {
+        name: 'linkedin',
+        url: 'https://www.linkedin.com/in/douglas-aquino-santos/',
+    },
     { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
 ];
 
@@ -32,8 +34,16 @@ export const MY_STACK = {
             icon: '/logo/react.png',
         },
         {
+            name: 'Angular',
+            icon: '/logo/angular.svg',
+        },
+        {
             name: 'Next.js',
             icon: '/logo/next.png',
+        },
+        {
+            name: 'Vite.js',
+            icon: '/logo/Vite.js.svg',
         },
         {
             name: 'Redux',
@@ -44,16 +54,8 @@ export const MY_STACK = {
             icon: '/logo/tailwind.png',
         },
         {
-            name: 'GSAP',
-            icon: '/logo/gsap.png',
-        },
-        {
             name: 'Framer Motion',
             icon: '/logo/framer-motion.png',
-        },
-        {
-            name: 'Sass',
-            icon: '/logo/sass.png',
         },
         {
             name: 'Bootstrap',
@@ -66,12 +68,12 @@ export const MY_STACK = {
             icon: '/logo/node.png',
         },
         {
-            name: 'NestJS',
-            icon: '/logo/nest.svg',
-        },
-        {
             name: 'Express.js',
             icon: '/logo/express.png',
+        },
+        {
+            name: 'Supabase',
+            icon: '/logo/supabase.svg',
         },
     ],
     database: [
@@ -91,6 +93,10 @@ export const MY_STACK = {
             name: 'Prisma',
             icon: '/logo/prisma.png',
         },
+        {
+            name: 'Dbeaver',
+            icon: '/logo/DBeaver.svg',
+        },
     ],
     tools: [
         {
@@ -102,207 +108,159 @@ export const MY_STACK = {
             icon: '/logo/docker.svg',
         },
         {
-            name: 'AWS',
-            icon: '/logo/aws.png',
+            name: 'Firebase',
+            icon: '/logo/Firebase.svg',
+        },
+        {
+            name: 'Postman',
+            icon: '/logo/Postman.svg',
+        },
+        {
+            name: 'Figma',
+            icon: '/logo/Figma.svg',
+        },
+    ],
+    studying: [
+        {
+            name: 'Laravel',
+            icon: '/logo/Laravel.svg',
+        },
+        {
+            name: 'Flutter',
+            icon: '/logo/Flutter.svg',
+        },
+        {
+            name: 'Vue.js',
+            icon: '/logo/Vue.js.svg',
+        },
+        {
+            name: 'Python',
+            icon: '/logo/Python.svg',
         },
     ],
 };
 
 export const PROJECTS: IProject[] = [
     {
-        title: 'Electro EV',
-        slug: 'electro-ev',
-        liveUrl: 'https://electroev.co.uk/',
+        title: 'Tennis Trend',
+        slug: 'tennis-trend',
+        techStack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+        thumbnail: '/projects/thumbnail/worldtennis.png',
+        longThumbnail: '/projects/long/worldtennis.jpg',
+        images: [
+            '/projects/images/world-tennis-1.png',
+            '/projects/images/world-tennis-2.png',
+        ],
+        sourceCode: 'https://github.com/D0uglasSantos/tennis-trend',
+        liveUrl: 'https://tennis-trend.vercel.app',
+        year: 2024,
+        description: `Tennis Trend Shop is an e-commerce landing page focused on tennis products. The project was developed to explore and deepen knowledge in Next.js and Tailwind CSS technologies, resulting in a modern and responsive interface.`,
+        role: `Front-end Developer <br/>
+        - Developed the complete user interface using Next.js and Tailwind CSS.<br/>
+        - Ensured a fully responsive design and a modern aesthetic for the store.`,
+    },
+    {
+        title: 'Fitlife Gym',
+        slug: 'fitlife-gym',
+        techStack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'React Icons'],
+        thumbnail: '/projects/thumbnail/fitlife.png',
+        longThumbnail: '/projects/long/fitlife.jpg',
+        images: [
+            '/projects/images/fitlife-1.png',
+            '/projects/images/fitlife-2.png',
+            '/projects/images/fitlife-3.png',
+            '/projects/images/fitlife-4.png',
+        ],
+        sourceCode: 'https://github.com/D0uglasSantos/fitlife-gym',
+        liveUrl: 'https://fit-life-gym.vercel.app/',
+        year: 2024,
+        description: `Fitlife Gym is a modern and interactive website for a gym. The project features a responsive layout and fluid animations, providing an engaging and dynamic user experience.`,
+        role: `Front-end Developer <br/>
+        - Built the frontend from scratch using Next.js and Tailwind CSS.<br/>
+        - Implemented engaging animations using Framer Motion.<br/>
+        - Designed a fully responsive layout, adaptable to all devices.`,
+    },
+    {
+        title: 'Restaura',
+        slug: 'restaura',
+        techStack: ['React', 'Vite', 'Tailwind CSS'],
+        thumbnail: '/projects/thumbnail/restaura.png',
+        longThumbnail: '/projects/long/restaura.jpg',
+        images: [
+            '/projects/images/restaura-1.png',
+            '/projects/images/restaura-2.png',
+            '/projects/images/restaura-3.png',
+            '/projects/images/restaura-4.png',
+            '/projects/images/restaura-5.png',
+        ],
+        sourceCode: 'https://github.com/D0uglasSantos/restaura',
+        liveUrl: 'https://restaura-restaurant.vercel.app/',
+        year: 2024,
+        description: `Restaura is a study project focused on creating a landing page for a restaurant. The interface was designed to be clean and appetizing, elegantly highlighting the restaurant's menus and services.`,
+        role: `Front-end Developer <br/>
+        - Developed a fast and optimized landing page using React and Vite.<br/>
+        - Styled the application with Tailwind CSS for a modern and attractive look.<br/>
+        - Ensured a seamless user experience across different screen sizes.`,
+    },
+    {
+        title: 'Roland GO:KEYS 5',
+        slug: 'gokeys-site',
+        techStack: ['React', 'Vite', 'Tailwind CSS', 'GSAP', 'Lucide React'],
+        thumbnail: '/projects/thumbnail/gokeys5.png',
+        longThumbnail: '/projects/long/gokeys5.jpg',
+        images: [
+            '/projects/images/gokeys5-1.png',
+            '/projects/images/gokeys5-2.png',
+            '/projects/images/gokeys5-3.png',
+            '/projects/images/gokeys5-4.png',
+            '/projects/images/gokeys5-5.png',
+            '/projects/images/gokeys5-6.png',
+        ],
+        sourceCode: 'https://github.com/D0uglasSantos/gokeys-site',
+        liveUrl: 'https://gokeys-site.vercel.app',
+        year: 2024,
+        description: `An immersive and modern experience to showcase the Roland GO:KEYS 5 music creation keyboard. The project focuses on an elegant user interface (UI), smooth transitions, and an optimized navigation experience (UX), reflecting the quality and design of the physical product.`,
+        role: `Front-end Developer <br/>
+        - Built a responsive and high-converting interface using React and Vite.<br/>
+        - Integrated advanced animations with GSAP for complex and high-performance web interactions.<br/>
+        - Ensured extreme performance and excellent Core Web Vitals.`,
+    },
+    {
+        title: 'Sanctorum',
+        slug: 'sanctorum',
+        techStack: ['Next.js', 'Tailwind CSS'],
+        thumbnail: '/projects/thumbnail/sactorum.png',
+        longThumbnail: '/projects/long/sanctorum.jpg',
+        images: [],
+        sourceCode: 'https://github.com/D0uglasSantos/sanctorum',
+        liveUrl: 'https://sanctorum-mmxxv.vercel.app',
         year: 2025,
-        description: `
-      A complete agency portfolio platform built for Electro EV to showcase their services, blog content, and product offerings. <br/> <br/>
-      
-      Key Features:<br/>
-      <ul>
-        <li>🛠️ Service Display System: Interactive service showcase with synchronized sliders</li>
-        <li>✍️ Blog Management: SEO-friendly blog with categorization and search</li>
-        <li>🛒 Product Catalog: Organized product display with filtering capabilities</li>
-        <li>📱 Fully Responsive: Optimized for all device sizes</li>
-        <li>⚡ Fast Performance: Optimized Next.js frontend with ISR (Incremental Static Regeneration)</li>
-      </ul><br/>
-      
-      Technical Highlights:
-      <ul>
-        <li>Implemented complex slider synchronization logic using Swiper.js</li>
-        <li>Customized Payload CMS admin panel for intuitive content management</li>
-        <li>Developed reusable UI components with shadcn for design consistency</li>
-        <li>Configured efficient data fetching strategies in Next.js</li>
-      </ul>
-      `,
-        role: `
-      Full-Stack Developer <br/>
-      Owned the entire development lifecycle:
-      <ul>
-        <li>✅ Backend: Configured Payload CMS with custom collections for services, blogs, and products</li>
-        <li>🎨 Frontend: Built all UI components using Tailwind CSS and shadcn</li>
-        <li>🔄 State Management: Implemented client-side data fetching and caching</li>
-        <li>🖥️ CMS Customization: Created admin interfaces for content editors</li>
-        <li>🚀 Deployment: Set up CI/CD pipeline for Vercel hosting</li>
-        <li>🧩 Third-Party Integration: Added Swiper.js for interactive sliders</li>
-      </ul>
-      `,
-        techStack: [
-            'Next.js',
-            'Payload CMS',
-            'Tailwind CSS',
-            'shadcn',
-            'Swiper.js',
-            'React Hook Form',
-            'Vercel',
-        ],
-        thumbnail: '/projects/thumbnail/mti-electronics.webp',
-        longThumbnail: '/projects/long/mti-electronics.webp',
-        images: [
-            '/projects/images/mti-electronics-1.webp',
-            '/projects/images/mti-electronics-2.webp',
-        ],
-    },
-    {
-        title: 'Epikcart',
-        slug: 'epikcart',
-        techStack: [
-            'React',
-            'Redux',
-            'React i18n',
-            'Tailwind CSS',
-            'Framer Motion',
-            'debouncing',
-            'Api Integration',
-        ],
-        thumbnail: '/projects/thumbnail/epikcart.jpg',
-        longThumbnail: '/projects/long/epikcart.jpg',
-        images: [
-            '/projects/images/epikcart-1.png',
-            '/projects/images/epikcart-2.png',
-            '/projects/images/epikcart-3.png',
-            '/projects/images/epikcart-4.png',
-            '/projects/images/epikcart-5.png',
-        ],
-        liveUrl: 'https://demo.epikcart.siphertech.com/',
-        year: 2023,
-        description: `Epikcart is a feature-rich, scalable e-commerce platform tailored for large businesses. It features dynamic product filtering, multi-language support with RTL, advanced inventory management, order tracking, and refund systems, offering a comprehensive solution for multi-vendor operations.`,
-        role: `As the frontend developer in a team of five, I: <br/>
-        - Built the frontend from scratch using React, Redux, RTK Query, and Tailwind CSS.<br/>
-        - Developed dynamic filtering logic for the product search page with admin-configurable parameters.<br/>
-        - Integrated multi-language support with React i18n, including RTL handling.<br/>
-        - Delivered a responsive, user-friendly interface in collaboration with the UI/UX designer.`,
-    },
-    {
-        title: 'Resume Roaster',
-        slug: 'resume-roaster',
-        techStack: [
-            'GPT-4',
-            'Next.js',
-            'Postgressql',
-            'Prisma',
-            'Tailwind CSS',
-        ],
-        thumbnail: '/projects/thumbnail/resume-roaster.jpg',
-        longThumbnail: '/projects/long/resume-roaster.jpg',
-        images: [
-            '/projects/images/resume-roaster-1.png',
-            '/projects/images/resume-roaster-2.png',
-            '/projects/images/resume-roaster-3.png',
-        ],
-        liveUrl: 'https://resume-roaster.vercel.app/',
-        year: 2023,
-        description:
-            'Resume Roaster is a web application designed to provide tailored resume feedback and professional writing services. Built with Next.js, PostgreSQL, Prisma, and Tailwind CSS, it integrates GPT-4 for AI-powered recommendations. The platform also includes peer-to-peer reviews with a points-based system, fostering a collaborative and engaging experience. Targeting freshers, experienced professionals, and programmers, it helps optimize resumes for job-specific success.',
-        role: `As the sole developer and business owner, I:<br/>
-        - Designed and developed the platform end-to-end using Next.js, PostgreSQL, Prisma, and Tailwind CSS.<br/>
-        - Integrated GPT-4 for AI-driven feedback and insights.<br/>
-        - Implemented complex SQL queries, including one to identify the top two resumes based on user points.`,
-    },
-    {
-        title: 'Real Estate',
-        slug: 'property-pro',
-        techStack: [
-            'React.js',
-            'Redux',
-            'Tailwind CSS',
-            'React i18n',
-            'Framer Motion',
-        ],
-        thumbnail: '/projects/thumbnail/property-pro.jpg',
-        longThumbnail: '/projects/long/property-pro.jpg',
-        images: [
-            '/projects/images/property-pro-1.png',
-            '/projects/images/property-pro-2.png',
-            '/projects/images/property-pro-3.png',
-        ],
-        liveUrl: 'https://demo.propertypro.siphertech.com/',
-        year: 2023,
-        description:
-            'PropertyPro is a real estate management platform offering users a seamless experience to explore, manage, and view property listings. The application emphasizes accessibility and responsive design, ensuring a smooth interface across devices.',
-        role: `As the frontend developer, I:<br/>
-        - Built the frontend using React, Redux, RTK Query, Framer Motion, and Tailwind CSS.<br/>
-        - Integrated dynamic state management for efficient handling of property data.<br/>
-        - Implemented multi-language support with React i18n to cater to diverse audiences.<br/>
-        - Enhanced user interaction with animations and transitions using Framer Motion.`,
-    },
-    {
-        title: 'Consulting Finance',
-        slug: 'crenotive',
-        techStack: ['HTML', 'CSS & SCSS', 'Javascript', 'Bootstrap'],
-        thumbnail: '/projects/thumbnail/consulting-finance.jpg',
-        longThumbnail: '/projects/long/consulting-finance.jpg',
-        images: [
-            '/projects/images/consulting-finance-1.png',
-            '/projects/images/consulting-finance-2.png',
-            '/projects/images/consulting-finance-3.png',
-        ],
-        sourceCode: 'https://github.com/Tajmirul/crenotive',
-        liveUrl: 'https://crenotive.netlify.app/',
-        year: 2023,
-        description:
-            'I developed Crenotive, a portfolio website using Html, SASS, and jQuery to showcase services and expertise. The design focuses on responsive user experience and effective presentation of professional achievements.',
-        role: ``,
-    },
-    {
-        title: 'devLinks',
-        slug: 'devLinks',
-        techStack: ['Next.js', 'Formik', 'Drag & Drop', 'Tailwind CSS'],
-        thumbnail: '/projects/thumbnail/devLinks.jpg',
-        longThumbnail: '/projects/long/devLinks.jpg',
-        images: [
-            '/projects/images/devLinks-1.png',
-            '/projects/images/devLinks-2.png',
-            '/projects/images/devLinks-3.png',
-        ],
-        sourceCode: 'https://github.com/Tajmirul/devsLink',
-        liveUrl: 'https://devlinks-demo.vercel.app/auth/signin',
-        year: 2023,
-        description: `One of the most challenging projects in Frontend Mentor.<br/><br/>
-
-            I developed a LinkSharing App as part of the Frontend Mentor challenge, utilizing React, Redux, and Tailwind CSS to create a responsive and feature-rich platform. The app allows users to share, save, and explore links, with a focus on intuitive design and smooth navigation. Advanced state management ensures efficient data handling for user interactions.`,
-        role: ``,
+        description: `Sanctorum is a modern web application built with the latest versions of Next.js and Tailwind CSS. The project's main focus is performance and a clean, minimalist design.`,
+        role: `Front-end Developer <br/>
+        - Developed the application using Next.js 15 and Tailwind CSS.<br/>
+        - Focused on performance optimization and a fully responsive design.`,
     },
 ];
 
 export const MY_EXPERIENCE = [
     {
-        title: 'Software Engineer (Frontend)',
-        company: 'Strativ AB',
-        duration: 'Dec 2024 - Present',
+        title: 'Web Design and Front-end Developer',
+        company: 'Freelancer',
+        duration: 'Dec 2020 - Current',
     },
     {
-        title: 'Frontend Developer',
-        company: 'Epikcoders',
-        duration: 'Oct 2023 - Nov 2024',
+        title: 'UX/UI and Front-end Developer Jr.',
+        company: 'Incript',
+        duration: 'Dez 2022 - Aug 2023',
     },
     {
-        title: 'Frontend Engineer',
-        company: 'Anchorblock Technology',
-        duration: 'Oct 2022 - Sep 2023',
+        title: 'UX/UI and Web Developer',
+        company: 'Ministry of the Environment - Brazil',
+        duration: 'Dez 2023 - Jan 2025',
     },
     {
-        title: 'Frontend Developer (Part-time)',
-        company: 'Branex IT',
-        duration: 'Jan 2022 - Oct 2022',
+        title: 'AI Frontend Engineer',
+        company: 'Anova Investimentos',
+        duration: 'Feb 2025 - Mar 2026',
     },
 ];

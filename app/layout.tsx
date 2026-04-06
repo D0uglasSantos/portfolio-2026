@@ -11,6 +11,7 @@ import Navbar from '@/components/Navbar';
 import CustomCursor from '@/components/CustomCursor';
 import Preloader from '../components/Preloader';
 import StickyEmail from './_components/StickyEmail';
+import BackToTop from '@/components/BackToTop';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import Script from 'next/script';
 
@@ -29,8 +30,8 @@ const robotoFlex = Roboto_Flex({
 });
 
 export const metadata: Metadata = {
-    title: 'Portfolio - Tajmirul Islam',
-    description: 'Personal portfolio of Tajmirul Islam',
+    title: 'Portfolio - Douglas Santos',
+    description: 'Personal portfolio of Douglas Santos',
 };
 
 export default function RootLayout({
@@ -77,6 +78,7 @@ export default function RootLayout({
                     <CustomCursor />
                     <Preloader />
                     <ScrollProgressIndicator />
+                    <BackToTop />
                     <ParticleBackground />
                     <StickyEmail />
                 </ReactLenis>

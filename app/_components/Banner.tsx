@@ -42,7 +42,7 @@ const Banner = () => {
             >
                 <div className="max-md:grow max-md:flex flex-col justify-center items-start max-w-[544px]">
                     <h1 className="banner-title slide-up-and-fade leading-[.95] text-6xl sm:text-[80px] font-anton">
-                        <span className="text-primary">FRONTEND</span>
+                        <span className="text-primary">FULLSTACK</span>
                         <br /> <span className="ml-4">DEVELOPER</span>
                     </h1>
                     <p className="banner-description slide-up-and-fade mt-6 text-lg text-muted-foreground">
@@ -50,10 +50,11 @@ const Banner = () => {
                         <span className="font-medium text-foreground">
                             Douglas A Santos
                         </span>
-                        . a Frontend Developer with over 4 years of experience
-                        crafting scalable, high-performance, and responsive web
-                        applications, with a strong focus on clean design and
-                        user experience.
+                        , a Fullstack Developer based in Brasília with over 4
+                        years of experience building digital solutions — from
+                        landing pages to complete web systems — integrating
+                        frontend, backend, APIs, and UI/UX with a strong focus
+                        on performance and user experience.
                     </p>
                     <Button
                         as="link"

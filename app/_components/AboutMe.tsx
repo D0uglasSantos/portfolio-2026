@@ -73,18 +73,21 @@ const AboutMe = () => {
                     <div className="md:col-span-7">
                         <div className="text-lg text-muted-foreground max-w-[450px]">
                             <p className="slide-up-and-fade">
-                                I&apos;m a frontend web developer dedicated to
-                                turning ideas into creative solutions. I
-                                specialize in creating seamless and intuitive
-                                user experiences.
+                                I&apos;m a Fullstack Software Developer
+                                dedicated to turning ideas into complete digital
+                                solutions. I work across React, Next.js,
+                                TypeScript, Angular, Node.js, REST APIs, and
+                                databases — connecting frontend, backend, and
+                                user experience.
                             </p>
                             <p className="mt-3 slide-up-and-fade">
-                                My approach focuses on creating scalable,
-                                high-performing solutions tailored to both user
-                                needs and business objectives. By prioritizing
-                                performance, accessibility, and responsiveness,
-                                I strive to deliver experiences that not only
-                                engage users but also drive tangible results.
+                                My experience spans management platforms,
+                                church and clinic systems, corporate products,
+                                and high-converting interfaces. I focus on
+                                scalable delivery, UI/UX prototyping in Figma,
+                                accessibility, responsive design, and
+                                evolutionary maintenance — with a collaborative,
+                                analytical mindset oriented to results.
                             </p>
                         </div>
                     </div>

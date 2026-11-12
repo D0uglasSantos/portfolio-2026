@@ -1,6 +1,6 @@
 'use client';
 import SectionTitle from '@/components/SectionTitle';
-import { MY_EXPERIENCE } from '@/lib/data';
+import { MY_EDUCATION, MY_EXPERIENCE } from '@/lib/data';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
@@ -68,8 +68,28 @@ const Experiences = () => {
                             <p className="text-lg text-muted-foreground">
                                 {item.duration}
                             </p>
+                            {item.description ? (
+                                <p className="mt-4 max-w-2xl text-base text-muted-foreground">
+                                    {item.description}
+                                </p>
+                            ) : null}
                         </div>
                     ))}
+
+                    <div className="experience-item border-t border-border pt-14">
+                        <p className="text-xl text-muted-foreground">
+                            {MY_EDUCATION.institution}
+                        </p>
+                        <p className="text-5xl font-anton leading-none mt-3.5 mb-2.5">
+                            {MY_EDUCATION.title}
+                        </p>
+                        <p className="text-lg text-muted-foreground">
+                            {MY_EDUCATION.duration}
+                        </p>
+                        <p className="mt-4 max-w-2xl text-base text-muted-foreground">
+                            {MY_EDUCATION.description}
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>

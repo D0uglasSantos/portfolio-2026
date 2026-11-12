@@ -2,11 +2,13 @@ import { IProject } from '@/types';
 
 export const GENERAL_INFO = {
     email: 'dastechnologiescontato@gmail.com',
+    location: 'Brasília/DF',
 
     emailSubject: "Let's collaborate on a project",
     emailBody: 'Hi Douglas, I am reaching out to you because...',
 
     oldPortfolio: 'https://douglas-santos-portfolio.vercel.app/',
+    portfolio: 'https://dastech-portfolio.vercel.app/',
     linkedin: 'https://www.linkedin.com/in/douglas-aquino-santos/',
 };
 
@@ -42,6 +44,10 @@ export const MY_STACK = {
             icon: '/logo/next.png',
         },
         {
+            name: 'Vue.js',
+            icon: '/logo/Vue.js.svg',
+        },
+        {
             name: 'Vite.js',
             icon: '/logo/Vite.js.svg',
         },
@@ -56,6 +62,10 @@ export const MY_STACK = {
         {
             name: 'Framer Motion',
             icon: '/logo/framer-motion.png',
+        },
+        {
+            name: 'GSAP',
+            icon: '/logo/gsap.png',
         },
         {
             name: 'Bootstrap',
@@ -74,6 +84,10 @@ export const MY_STACK = {
         {
             name: 'Supabase',
             icon: '/logo/supabase.svg',
+        },
+        {
+            name: 'Firebase',
+            icon: '/logo/Firebase.svg',
         },
     ],
     database: [
@@ -104,12 +118,12 @@ export const MY_STACK = {
             icon: '/logo/git.png',
         },
         {
-            name: 'Docker',
-            icon: '/logo/docker.svg',
+            name: 'GitHub',
+            icon: '/logo/github.png',
         },
         {
-            name: 'Firebase',
-            icon: '/logo/Firebase.svg',
+            name: 'Docker',
+            icon: '/logo/docker.svg',
         },
         {
             name: 'Postman',
@@ -128,10 +142,6 @@ export const MY_STACK = {
         {
             name: 'Flutter',
             icon: '/logo/Flutter.svg',
-        },
-        {
-            name: 'Vue.js',
-            icon: '/logo/Vue.js.svg',
         },
         {
             name: 'Python',
@@ -244,23 +254,39 @@ export const PROJECTS: IProject[] = [
 
 export const MY_EXPERIENCE = [
     {
-        title: 'Web Design and Front-end Developer',
-        company: 'Freelancer',
-        duration: 'Dec 2020 - Current',
-    },
-    {
-        title: 'UX/UI and Front-end Developer Jr.',
-        company: 'Incript',
-        duration: 'Dez 2022 - Aug 2023',
+        title: 'Fullstack Developer / AI Frontend Engineer',
+        company: 'Anova Investimentos',
+        duration: '2024 — 2026',
+        description:
+            'Evolutionary development of web platforms, internal systems, and reusable components. API integrations, performance, responsiveness, UX improvements, and white-label interfaces with visual identity parametrization.',
     },
     {
         title: 'UX/UI and Web Developer',
-        company: 'Ministry of the Environment - Brazil',
-        duration: 'Dez 2023 - Jan 2025',
+        company: 'Ministry of the Environment — MMA/DF',
+        duration: '2023 — 2024',
+        description:
+            'Prototyping and interface development for government projects such as DSISNAMA, CONAMA, and PNLA. Supported data and process analysis and technical communication with IT teams.',
     },
     {
-        title: 'AI Frontend Engineer',
-        company: 'Anova Investimentos',
-        duration: 'Feb 2025 - Mar 2026',
+        title: 'UX/UI and Junior Fullstack Developer',
+        company: 'Incript',
+        duration: '2022 — 2023',
+        description:
+            'Created interfaces and UX for apps and systems, evolving features of digital products end to end.',
+    },
+    {
+        title: 'Web Designer and Fullstack Developer',
+        company: 'Freelancer — DASTechnologies',
+        duration: '2020 — Present',
+        description:
+            'End-to-end delivery of sites, landing pages, apps, and systems — including Domus, Confessio, clinic platforms, and web apps like Pray Rats and Gym Rats Challenge Hub. Frontend, backend, API integrations, authentication, data persistence, UI/UX design, and ongoing maintenance.',
     },
 ];
+
+export const MY_EDUCATION = {
+    title: 'Systems Analysis and Development',
+    institution: 'CEUB, Brasília/DF',
+    duration: '2021 — 2024',
+    description:
+        'Emphasis on systems development, project management, and process analysis.',
+};

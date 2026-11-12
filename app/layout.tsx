@@ -30,8 +30,9 @@ const robotoFlex = Roboto_Flex({
 });
 
 export const metadata: Metadata = {
-    title: 'Portfolio - Douglas Santos',
-    description: 'Personal portfolio of Douglas Santos',
+    title: 'Portfolio - Douglas Santos | Fullstack Developer',
+    description:
+        'Fullstack Software Developer and AI Frontend Engineer based in Brasília/DF. Building web systems, platforms, and interfaces with React, Next.js, TypeScript, Node.js, and more.',
 };
 
 export default function RootLayout({
